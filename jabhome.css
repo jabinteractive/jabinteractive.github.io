@@ -1,0 +1,200 @@
+.mainbody {
+    background-image: linear-gradient(90deg, darkgrey, grey, white, pink, red, pink, white, grey, darkgrey);
+    background-size: 500%;
+    animation: bg-ani 70s infinite alternate;
+}
+
+@keyframes  bg-ani {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+.mainbodyalt {
+    background-image: linear-gradient(45deg, #93D1FF, #5BB2F0, #D38E26, #FFAC2F);
+    background-size: 140%;
+    animation: bg-ani-alt 8s infinite alternate;
+    height: 100vh;
+}
+
+@keyframes  bg-ani-alt {
+    0% {background-image: linear-gradient(45deg, #93D1FF, #5BB2F0, #D38E26, #FFAC2F)}
+    100% {background-image: linear-gradient(90deg, #93D1FF, #5BB2F0, #D38E26, #FFAC2F)}
+}
+
+h1 {
+    font-family: Space Mono;
+    font-size: 36px;
+    text-decoration: wavy underline;
+    font-weight: bold;
+    padding: 4px 4px 4px 4px;
+}
+
+p {
+    font-family: Space Mono;
+    font-size: 24px;
+    padding: 4px 4px 4px 4px;
+}
+
+.jablogo {
+    padding: 16px;
+}
+
+.mainflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maingrid {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    padding: 24px 24px 24px 24px;
+    max-width: 80%;
+    min-width: 550px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    outline: solid;
+    outline-color: darkgrey;
+    transition-duration: 2s;
+    background-color: white;
+}
+
+.centergrid {
+    align-items: center;
+}
+
+.maingrid:hover {
+    box-shadow: 0px 0px 60px black;
+    outline-color: black;
+}
+
+.maingrid:active {
+    box-shadow: 0px 0px 60px black;
+}
+
+.rotatetext {
+    text-align: center;
+    padding-top: 42px;
+    transition-duration: 0.2s;
+}
+
+.rotatetext:hover {
+    transform: rotate(3deg);
+}
+
+.jabtext {
+    margin-top: 70px;
+    padding-left: 70px;
+    transition-duration: 0.2s;
+}
+
+.jabtext:hover {
+    transform: rotate(-3deg);
+}
+
+.contacttext {
+    margin-top: 56px;
+    padding-left: 90px;
+    transition-duration: 0.2s;
+}
+
+.contacttext:hover {
+    transform: rotate(-3deg);
+}
+
+.jabend {
+    text-align: center;
+    margin-top: 25%;
+}
+
+.jabselfeediv {
+    text-align: center;
+    vertical-align: center;
+}
+
+.jabselfee {
+    max-width: 80%;
+    outline: dashed black;
+    padding: 16px 16px 16px 16px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.jabselfee:hover {
+    transform: rotate(3deg);
+}
+
+.portfoliodiv {
+    text-align: center;
+    padding: 12px 12px 12px 12px;
+}
+
+.portfoliobutton {
+    width: 140px;
+    height: 140px;
+    padding: 4px 4px 4px 4px;
+    margin: 8px 8px 8px 8px;
+    background-color: black;
+    color: darkgrey;
+    outline: dashed darkgrey;
+    border: none;
+    font-family: Space Mono;
+    font-size: 16px;
+    text-decoration: wavy underline;
+}
+
+.contactbutton {
+    width: 240px;
+    height: 60px;
+    padding: 4px 4px 4px 4px;
+    margin: 8px 8px 8px 8px;
+    background-color: black;
+    color: darkgrey;
+    outline: dashed darkgrey;
+    border: none;
+    font-family: Space Mono;
+    font-size: 16px;
+    text-decoration: wavy underline;
+}
+
+.portfolioinactive {
+    width: 140px;
+    height: 140px;
+    padding: 4px 4px 4px 4px;
+    margin: 8px 8px 8px 8px;
+    background-color: grey;
+    color: black;
+    outline: dashed darkgrey;
+    border: none;
+    font-family: Space Mono;
+    font-size: 16px;
+    text-decoration: wavy underline;
+}
+
+.portfoliobutton:hover {
+    outline: dashed pink;
+    background-color: pink;
+    color: black;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.contactbutton:hover {
+    outline: dashed pink;
+    background-color: pink;
+    color: black;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.portfoliobutton:active {
+    background-color: red;
+    color: white;
+    font-style: italic;
+}
+
+.contactbutton:active {
+    background-color: red;
+    color: white;
+    font-style: italic;
+}
